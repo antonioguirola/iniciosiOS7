@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7F16547718E4CA2900B69DD2 /* CapturadorDatos.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F16547618E4CA2900B69DD2 /* CapturadorDatos.m */; };
+		7F16547F18E4CBB400B69DD2 /* TFHpple.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F16547A18E4CBB400B69DD2 /* TFHpple.m */; };
+		7F16548018E4CBB400B69DD2 /* TFHppleElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F16547C18E4CBB400B69DD2 /* TFHppleElement.m */; };
+		7F16548118E4CBB400B69DD2 /* XPathQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F16547E18E4CBB400B69DD2 /* XPathQuery.m */; };
+		7F16548318E4CC7300B69DD2 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F16548218E4CC7300B69DD2 /* libxml2.dylib */; };
 		7FEF0C2418B8BD7C009D9B9F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FEF0C2318B8BD7C009D9B9F /* Foundation.framework */; };
 		7FEF0C2618B8BD7C009D9B9F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FEF0C2518B8BD7C009D9B9F /* CoreGraphics.framework */; };
 		7FEF0C2818B8BD7C009D9B9F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FEF0C2718B8BD7C009D9B9F /* UIKit.framework */; };
@@ -35,6 +40,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7F16547518E4CA2900B69DD2 /* CapturadorDatos.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CapturadorDatos.h; sourceTree = "<group>"; };
+		7F16547618E4CA2900B69DD2 /* CapturadorDatos.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CapturadorDatos.m; sourceTree = "<group>"; };
+		7F16547918E4CBB400B69DD2 /* TFHpple.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFHpple.h; sourceTree = "<group>"; };
+		7F16547A18E4CBB400B69DD2 /* TFHpple.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFHpple.m; sourceTree = "<group>"; };
+		7F16547B18E4CBB400B69DD2 /* TFHppleElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFHppleElement.h; sourceTree = "<group>"; };
+		7F16547C18E4CBB400B69DD2 /* TFHppleElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFHppleElement.m; sourceTree = "<group>"; };
+		7F16547D18E4CBB400B69DD2 /* XPathQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPathQuery.h; sourceTree = "<group>"; };
+		7F16547E18E4CBB400B69DD2 /* XPathQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPathQuery.m; sourceTree = "<group>"; };
+		7F16548218E4CC7300B69DD2 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
 		7FEF0C2018B8BD7C009D9B9F /* probandoiOS7.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = probandoiOS7.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FEF0C2318B8BD7C009D9B9F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		7FEF0C2518B8BD7C009D9B9F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -62,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F16548318E4CC7300B69DD2 /* libxml2.dylib in Frameworks */,
 				7FEF0C2618B8BD7C009D9B9F /* CoreGraphics.framework in Frameworks */,
 				7FEF0C2818B8BD7C009D9B9F /* UIKit.framework in Frameworks */,
 				7FEF0C2418B8BD7C009D9B9F /* Foundation.framework in Frameworks */,
@@ -81,6 +96,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7F16547418E4C9DE00B69DD2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7F16547518E4CA2900B69DD2 /* CapturadorDatos.h */,
+				7F16547618E4CA2900B69DD2 /* CapturadorDatos.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		7F16547818E4CB6600B69DD2 /* hpple */ = {
+			isa = PBXGroup;
+			children = (
+				7F16547918E4CBB400B69DD2 /* TFHpple.h */,
+				7F16547A18E4CBB400B69DD2 /* TFHpple.m */,
+				7F16547B18E4CBB400B69DD2 /* TFHppleElement.h */,
+				7F16547C18E4CBB400B69DD2 /* TFHppleElement.m */,
+				7F16547D18E4CBB400B69DD2 /* XPathQuery.h */,
+				7F16547E18E4CBB400B69DD2 /* XPathQuery.m */,
+			);
+			name = hpple;
+			sourceTree = "<group>";
+		};
 		7FEF0C1718B8BD7C009D9B9F = {
 			isa = PBXGroup;
 			children = (
@@ -103,6 +140,7 @@
 		7FEF0C2218B8BD7C009D9B9F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7F16548218E4CC7300B69DD2 /* libxml2.dylib */,
 				7FEF0C2318B8BD7C009D9B9F /* Foundation.framework */,
 				7FEF0C2518B8BD7C009D9B9F /* CoreGraphics.framework */,
 				7FEF0C2718B8BD7C009D9B9F /* UIKit.framework */,
@@ -114,6 +152,8 @@
 		7FEF0C2918B8BD7C009D9B9F /* probandoiOS7 */ = {
 			isa = PBXGroup;
 			children = (
+				7F16547818E4CB6600B69DD2 /* hpple */,
+				7F16547418E4C9DE00B69DD2 /* Model */,
 				7FEF0C3218B8BD7C009D9B9F /* AppDelegate.h */,
 				7FEF0C3318B8BD7C009D9B9F /* AppDelegate.m */,
 				7FEF0C3518B8BD7C009D9B9F /* Main_iPhone.storyboard */,
@@ -253,6 +293,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F16548018E4CBB400B69DD2 /* TFHppleElement.m in Sources */,
+				7F16548118E4CBB400B69DD2 /* XPathQuery.m in Sources */,
+				7F16547F18E4CBB400B69DD2 /* TFHpple.m in Sources */,
+				7F16547718E4CA2900B69DD2 /* CapturadorDatos.m in Sources */,
 				7FEF0C3D18B8BD7C009D9B9F /* ViewController.m in Sources */,
 				7FEF0C3418B8BD7C009D9B9F /* AppDelegate.m in Sources */,
 				7FEF0C3018B8BD7C009D9B9F /* main.m in Sources */,
@@ -395,6 +439,11 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "probandoiOS7/probandoiOS7-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SDKROOT)/usr/include/libxml2",
+				);
 				INFOPLIST_FILE = "probandoiOS7/probandoiOS7-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -409,6 +458,11 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "probandoiOS7/probandoiOS7-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SDKROOT)/usr/include/libxml2",
+				);
 				INFOPLIST_FILE = "probandoiOS7/probandoiOS7-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -476,6 +530,7 @@
 				7FEF0C5718B8BD7C009D9B9F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7FEF0C5818B8BD7C009D9B9F /* Build configuration list for PBXNativeTarget "probandoiOS7Tests" */ = {
 			isa = XCConfigurationList;
@@ -484,6 +539,7 @@
 				7FEF0C5A18B8BD7C009D9B9F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
