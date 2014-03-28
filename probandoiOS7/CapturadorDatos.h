@@ -10,7 +10,12 @@
 
 @interface CapturadorDatos : NSObject
 
-@property(nonatomic, copy)NSString*title;
-@property(nonatomic, copy)NSString*url;
+@property(nonatomic, copy)NSString* query;
+@property(nonatomic, copy)NSString* url;
+@property(nonatomic, copy)NSArray* aResultados;
+
+// declaración de métodos
++(CapturadorDatos*) obtenerObjeto;
+-(NSArray*)parse;
 
 @end

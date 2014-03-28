@@ -7,8 +7,8 @@
 //
 
 #import "ViewController.h"
-#import "TFHpple.h"
 #import "CapturadorDatos.h"
+#import "TFHpple.h"
 
 @interface ViewController ()
 
@@ -30,7 +30,14 @@
     [_wvNavegador loadRequest:peticion];
     
     // probamos la descarga del parser
-    [self cargarBlogs];
+    NSArray* aBlogs = [self obtenerBlogs];
+    
+    // los recorremos y mostramos por pantalla
+    for(TFHppleElement *element in aBlogs){
+        
+        NSLog(@"Elemento encontrado: %@", [element objectForKey:@"href"]);
+
+    }
 }
 
 - (void)didReceiveMemoryWarning
@@ -39,37 +46,14 @@
     // Dispose of any resources that can be recreated.
 }
 
-
-// métodos propios
--(void)cargarBlogs {
-    // 1
-    NSURL *urlListadoBlogs =[NSURL URLWithString: @"http://programacionmovilesugr.blogspot.com.es/2014/03/lista-de-blogs.html"];
-    NSData *blogsHtmlData =[NSData dataWithContentsOfURL: urlListadoBlogs];
+-(NSArray*)obtenerBlogs
+{
+    CapturadorDatos *objCapturador = [CapturadorDatos obtenerObjeto];
+    [objCapturador setUrl:@"http://programacionmovilesugr.blogspot.com.es/2014/03/lista-de-blogs.html"];
+    [objCapturador setQuery:@"//div[@itemprop='blogPost']//li/a"];
     
-    // 2
-    
-    TFHpple *parser =[TFHpple hppleWithHTMLData: blogsHtmlData];
-    
-    // 3
-    
-    NSString *sCadenaBusqueda = @"//div[@itemprop='blogPost']//li/a";
-    
-    NSArray *aNodos =[parser searchWithXPathQuery:sCadenaBusqueda];
-    
-    // 4
-    
-    NSMutableArray *aUrlBlogs =[[NSMutableArray alloc] initWithCapacity: 0];
-    
-    for(TFHppleElement *element in aNodos){
-        
-        NSLog(@"Elemento encontrado: %@", [element objectForKey:@"href"]);
-        
-        [aUrlBlogs addObject:[element objectForKey:@"href"]];
-    }
-    
-    for (NSString *sUrl in aUrlBlogs) {
-        NSLog(@"URL = %@", sUrl);
-    }
+    return [objCapturador parse];
 }
+
 
 @end
